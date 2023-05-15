@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+h1 {
+    color: indianred;
+}
+h2 {
+    color: darkred;
+}
+h3 {
+    color: crimson;
+}
+
+p {
+    font-size: 18pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: chocolate;
+    background-color: aquamarine;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    width: 500px;
+    margin: 10px auto 10px auto;
+}
