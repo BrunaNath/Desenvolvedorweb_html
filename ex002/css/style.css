@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+h1 {
+    color: yellowgreen;
+}
+
+div {
+    height: 20px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(216, 146, 146, 0.733);
+}
+
+#header, #footer {
+    background-color: bisque;
+}
+
+#nav {
+    background-color: burlywood;
+}
+
+.header-footer {
+    width: 300px;
+}
+
+.nav-main{
+    width: 300px;
+}
