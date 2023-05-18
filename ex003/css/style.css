@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+:root {
+    --cor1:#202426;
+    --cor2:#D6C5B3;
+    --cor3:#F22929;
+    --cor4:#A62121;
+    --cor5:#592020;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    height: 5
+    0px; /* Essa propriedade altera a altura */
+    background-color: var(--cor1)
+    display: flex;
+    flex-direction: row;/* define a direção, se é em linha ou coluna */
+    padding: 0 15px 0 15px;
+
+}
+
+#header {
+    display: flex;
+    max-width:  1500;
+    margin: auto;
+}
+
+#logo {
+    width: 150px;
+    color: rgb(47, 85, 255); /* define a cor da fonte */
+    font-size: 30px; /* define a tamanho da fonte */
+    text-transform: uppercase; /* coloca em letras maiusculas */
+    display: flex; /* torna os itens internos em flexiveis */
+    align-items: center; /* alinha os itens do centro */
+}
+
+#logo ing {
+
+}
+
+nav {
+    display: flex;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: black;
+    color: rgb(47, 161, 255);
+    height: 100%;
+    width: 105px;
+    display: flex;
+    align-items: center;/* centraliza na vertical */
+    justify-content: center; /* centraliza na horizontal */
+    padding: 0 10px 0 10px; /* espaço dentro da div */
+}
+
+a:hover {
+    background-color: #614c51;
+}
+    
+
