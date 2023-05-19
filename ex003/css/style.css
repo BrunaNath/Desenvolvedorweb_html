@@ -1,11 +1,17 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: thunder ;
+src: url(../fontes/thunder_kingdom/Thunder\ Kingdom.ttf);
+}
+
+
 :root {
-    --cor1:#202426;
-    --cor2:#D6C5B3;
-    --cor3:#F22929;
-    --cor4:#A62121;
-    --cor5:#592020;
+    --cor1:#A6323B;
+    --cor2:#D9A7AB;
+    --cor3:#193559;
+    --cor4:#88A0BF;
+    --cor5:#0D0D0D;
 }
 
 * {
@@ -15,33 +21,53 @@
 }
 
 header {
-    height: 5
-    0px; /* Essa propriedade altera a altura */
-    background-color: var(--cor1)
+    background-color: rgb(39, 36, 36);
+    height: 70px;
     display: flex;
     flex-direction: row;/* define a direção, se é em linha ou coluna */
-    padding: 0 15px 0 15px;
-
+    position: relative;
 }
 
 #header {
     display: flex;
-    max-width:  1500;
+    width: 90%;
+    max-width:  1500px;
     margin: auto;
+    justify-content: center;/* centralizar o titulo quando o menu sumir */
+    align-items: center;
 }
 
 #logo {
-    width: 150px;
-    color: rgb(47, 85, 255); /* define a cor da fonte */
-    font-size: 30px; /* define a tamanho da fonte */
+    width: 300px;
+    color: rgb(255, 255, 255); /* define a cor da fonte */
+    font-size: 26px; /* define a tamanho da fonte */
     text-transform: uppercase; /* coloca em letras maiusculas */
     display: flex; /* torna os itens internos em flexiveis */
     align-items: center; /* alinha os itens do centro */
 }
 
-#logo ing {
-
+#logo img {
+    width: 60px;
 }
+
+#logo p {
+    margin-left: 10px;
+}
+
+#botao-menu {
+    display: none;
+}
+
+label[for='botao-menu'] {
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    left: 20px;
+}
+
+
+
 
 nav {
     display: flex;
@@ -51,9 +77,9 @@ nav {
 a {
     text-decoration: none;
     text-transform: uppercase;
-    background-color: black;
-    color: rgb(47, 161, 255);
-    height: 100%;
+    background-color: var(--cor1);
+    color: rgb(255, 255, 255);
+    height: 70px;
     width: 105px;
     display: flex;
     align-items: center;/* centraliza na vertical */
@@ -64,5 +90,99 @@ a {
 a:hover {
     background-color: #614c51;
 }
-    
+   
+figure {
+    margin: auto;
+    width: 100%;
+    height: 500px;
+    background-image: url("../imagens/pexels-dmitry-zvolskiy-1570806.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.text-figure-small {
+    color: antiquewhite;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.text-figure-1 {
+    border-bottom: 1px solid white;
+    padding: 0 25px 0px 25px;
+    text-align: center;
+}
+.text-figure-2 {
+    color:antiquewhite;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: bold;
+    margin: 10px 0px 10px;
+    font-family: thunder;
+    text-align: center;
+}
+#text-figure-3 {
+    border-top: 2px solid white;
+    padding: 10px 25px 0 25px;
+    text-align: center;
+}
+main {
+    position: relative;
+    width: 80%;
+    max-width: 1500px;
+    height: 500px;
+    margin: 0 auto 50px auto;
+    border: 1px solid black;
+    /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); */
+}
+/*  POSITION
+STATIC
+RELATIVE
+ABSOLUTE
+FIXED
+ */
+
+main > div {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    left: 50px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black
+}
+
+footer {
+    background-color: #0D0D0D;
+    height: 350px;
+}
+
+@media (max-width: 930px) {
+    nav {
+        flex-direction: column;
+        position: absolute;
+        width: 90%;
+        left: 20px;
+        top: 100%;
+        margin-top: -200%;
+        transition: all 2s;
+    }
+    
+    a {
+        width: 100%;
+        background-color: #0D0D0D;
+    }
+    
+    label[for='botao-menu'] {
+        display: block;
+    }
+        
+    #botao-menu:checked ~ nav {
+        margin-top: 0;
+    }
+}
