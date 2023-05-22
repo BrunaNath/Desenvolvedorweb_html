@@ -33,7 +33,7 @@ header {
     width: 90%;
     max-width:  1500px;
     margin: auto;
-    justify-content: center;/* centralizar o titulo quando o menu sumir */
+    justify-content: space-between;/* centralizar o titulo quando o menu sumir */
     align-items: center;
 }
 
@@ -65,7 +65,7 @@ label[for='botao-menu'] {
     position: absolute;
     left: 20px;
 }
-
+ 
 
 
 
@@ -91,7 +91,7 @@ a:hover {
     background-color: #614c51;
 }
    
-figure {
+#banner {
     margin: auto;
     width: 100%;
     height: 500px;
@@ -122,8 +122,8 @@ figure {
     font-size: 72px;
     font-weight: bold;
     margin: 10px 0px 10px;
+    text-align: center; 
     font-family: thunder;
-    text-align: center;
 }
 #text-figure-3 {
     border-top: 2px solid white;
@@ -132,11 +132,13 @@ figure {
 }
 main {
     position: relative;
-    width: 80%;
+    top: -30px;
+    width: 90%;
     max-width: 1500px;
-    height: 500px;
     margin: 0 auto 50px auto;
-    border: 1px solid black;
+    border-top: 3px solid firebrick;
+    box-shadow: 3px 3px 10px black;
+    background-color: white;
     /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); */
 }
 /*  POSITION
@@ -145,6 +147,52 @@ RELATIVE
 ABSOLUTE
 FIXED
  */
+ .main-section {
+    width: 95%;
+    max-width: 95%;
+    margin: 30px auto 40px auto;/* top > right > bottom > left */
+    height: auto;
+    border: 1px solid black;
+    border-top: 3px solid darkred;
+ }
+
+ .main-section h1 {
+    margin-bottom: 50px;
+    text-align: center;
+ }
+
+ #serviços {
+    display: flex;
+    justify-content: space-around;
+/*     border: 1px solid darkred;
+ */    flex-wrap: wrap;
+ }
+
+ #serviços > div {
+/*     border: 1px solid black;
+ */    width: 140px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+ }
+
+ #serviços img {
+    width: 75px;
+    background-color: rgb(255, 114, 114);
+    padding: 5px;
+    border-radius: 50%;
+ }
+
+ #serviços div:hover img {
+    background-color: rgb(250, 0, 0);
+ }  
+
+ #serviços div:hover figcaption {
+    color: red;
+ }
 
 main > div {
     position: absolute;
@@ -155,7 +203,7 @@ main > div {
     height: 100px;
     width: 100px;
     border: 1px solid black
-}
+} 
 
 footer {
     background-color: #0D0D0D;
