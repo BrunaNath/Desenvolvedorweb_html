@@ -14,6 +14,10 @@ src: url(../fontes/thunder_kingdom/Thunder\ Kingdom.ttf);
     --cor5:#0D0D0D;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -181,7 +185,7 @@ FIXED
  }
 
  #serviços img {
-    width: 75px;
+    width: 74px;
     background-color: rgb(255, 114, 114);
     padding: 5px;
     border-radius: 50%;
@@ -194,6 +198,32 @@ FIXED
  #serviços div:hover figcaption {
     color: red;
  }
+
+ #profissionais {
+    display: flex;
+    justify-content: space-around;
+/*     border: 1px solid darkred;*/
+    flex-wrap: wrap;
+    text-align: center;
+ }
+
+ #profissionais img {
+    width:200px;
+    height:220px;
+    background-color: rgb(255, 114, 114);
+    padding: 5px;
+    border-radius: 5%;
+}
+
+#profissionais div:hover img {
+    background-color: rgb(250, 0, 0);
+ }  
+
+ #profissionais div:hover figcaption {
+    color: red;
+ }
+
+
 
 main > div {
     position: absolute;
