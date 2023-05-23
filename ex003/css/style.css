@@ -159,6 +159,7 @@ FIXED
  .main-section h1 {
     margin-bottom: 50px;
     text-align: center;
+    border: 1px solid black;
  }
 
  #serviços {
@@ -170,13 +171,13 @@ FIXED
 
  #serviços > div {
 /*     border: 1px solid black;
- */    width: 140px;
-    height: 110px;
+ */    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 40px;
+    border: 1px solid black;
  }
 
  #serviços img {
