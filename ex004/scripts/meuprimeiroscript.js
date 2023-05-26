@@ -1,7 +1,7 @@
-window.alert('Seja bem vindo ao meu site!')
+/* window.alert('Seja bem vindo ao meu site!')
 window.confirm('Vamos confirmar seus dados?')
 window.prompt('Qual é seu nome')
-console.log('Olá Seja Bem Vindo a nossa aula JavaScript')
+console.log('Olá Seja Bem Vindo a nossa aula JavaScript') */
 /* Voces podem usar aspas simples, aspas duplas ou acento grave */
 
 var nome = window.prompt('Qual é seu nome?')
